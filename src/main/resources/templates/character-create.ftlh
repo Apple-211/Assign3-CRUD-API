@@ -4,100 +4,67 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Add a Character</title>
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-   <nav>
-   <a href="index.html">Home</a>
-   <a href="details.html">Details</a>
-   <a href="about.html">About</a>
-   <a href="new-character-form.html">Add a Character</a>
 
+<nav>
+   <a href="/characters">Home</a>
+   <a href="/about">About</a>
+   <a href="/characters/create">Add a Character</a>
 
    <span class="site-title">Disney Character Gallery</span>
 </nav>
 
-
 <h1>Add a New Character</h1>
 
+<p>Fill out the form below to add a new character to the gallery.</p>
 
-<p>Fill out the form below to add a new character to the gallery!</p>
+<form action="/characters/create" method="post">
 
-
-<form>
    <label for="name">Character Name</label>
    <input
-   type="text"
-   id="name"
-   name="name"
-   placeholder="Enter Characrter Name">
-
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter character name"
+      required>
 
    <label for="movie">Movie</label>
-
-
    <input
-   type="text"
-   id="movie"
-   name="movie"
-   placeholder="Frozen, Hoppers, Mulan, etc.">
-
-
-
-
-
-
-
-
-   <label for="universe">Universe</label>
-
-
-   <input
-   type="text"
-   id="universe"
-   name="universe"
-   placeholder="Disney, etc.">
-
+      type="text"
+      id="movie"
+      name="movie"
+      placeholder="Frozen, Mulan, Hercules, etc."
+      required>
 
    <label for="role">Role</label>
-
-
    <input
-   type="text"
-   id="role"
-   name="role"
-   placeholder="Hero, Villain, Warrior">
+      type="text"
+      id="role"
+      name="role"
+      placeholder="Hero, Villain, Princess, etc."
+      required>
 
-
-   <label for="image">Image URL</label>
-
-
+   <label for="species">Species</label>
    <input
-   type="'url"
-   id="'image"
-   name="image"
-   placeholder="https://example.com/image.jpg">
+      type="text"
+      id="species"
+      name="species"
+      placeholder="Human, Lion, Demigod, etc."
+      required>
 
-
-   <label for="'description">
-   Short Description
-   </label>
-
-
+   <label for="description">Short Description</label>
    <textarea
-   id="description"
-   name="description"
-   rows="6"
-   placeholder="Describe the character">
-   </textarea>
+      id="description"
+      name="description"
+      rows="6"
+      placeholder="Describe the character"
+      required></textarea>
 
-
-   <button type="submit">
-   Add Character
-   </button>
-
+   <button type="submit">Add Character</button>
 
 </form>
-  
+
 </body>
 </html>

@@ -13,12 +13,12 @@
 <body>
    <h1>Disney Character Gallery</h1>
 
-
 <nav>
-   <a href="index.html">Home</a>
-   <a href="details.html">Details</a>
-   <a href="about.html">About</a>
-   <a href="new-character-form.html">Add a Character</a>
+   <a href="/characters">Home</a>
+   <a href="/about">About</a>
+   <a href="/characters/create">Add a Character</a>
+
+   <span class="site-title">Disney Character Gallery</span>
 </nav>
 
 
@@ -41,9 +41,14 @@
 
       <p><strong>Species:</strong> ${character.species}</p>
 
+
       <p>${character.description}</p>
 
       <a href="/characters/${character.characterId?c}">View Details</a>
+      <a href="/characters/update/${character.characterId?c}">Update</a>
+      <a href="/characters/delete/${character.characterId?c}">Delete</a>
+
+      
 
    </div>
 </#list>

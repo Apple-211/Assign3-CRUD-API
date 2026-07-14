@@ -9,12 +9,11 @@
 
 
 <body>
-   <nav>
-   <a href="index.html">Home</a>
-   <a href="details.html">Details</a>
-   <a href="about.html">About</a>
-   <a href="new-character-form.html">Add a Character</a>
 
+<nav>
+   <a href="/characters">Home</a>
+   <a href="/about">About</a>
+   <a href="/characters/create">Add a Character</a>
 
    <span class="site-title">Disney Character Gallery</span>
 </nav>
