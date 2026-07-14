@@ -1,0 +1,84 @@
+body {
+   font-family: Arial, sans-serif;
+}
+
+
+nav {
+   background-color: #222;
+   padding: 10px;
+}
+
+
+nav a {
+   color: white;
+   margin-right: 15px;
+   text-decoration: none;
+}
+
+
+form {
+   max-width: 400px;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+
+input, textarea {
+   margin-bottom: 10px;
+   padding: 8px;
+}
+
+
+button {
+   padding: 10px;
+   background-color: skyblue;
+   color: white;
+   border: none;
+
+
+}
+
+
+.search-bar {
+   margin-bottom: 50px;
+}
+
+
+.search-bar {
+   border: 2px solid black;
+   padding: 8px;
+   border-radius: 5px;
+
+
+}
+
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+
+
+.navbar a {
+   color: white;
+   margin-right: 15px;
+   text-decoration: none;
+}
+
+
+.site-title {
+   margin-left: auto;
+   color: palevioletred;
+   font-weight: bold;
+  
+}
+
+
+.character-card {
+   border: 2px solid black;
+   padding: 10px;
+   border-radius: 8px;
+}
