@@ -21,14 +21,36 @@
    <span class="site-title">Disney Character Gallery</span>
 </nav>
 
+<form action="/characters" method="get">
+   <label for="name">Search by name</label>
 
-<input
-   class="search-bar"
-   type="text"
-   placeholder="Search Characters...">
+   <input
+      class="search-bar"
+      id="name"
+      type="text"
+      name="name"
+      placeholder="Search characters..."
+      value="${searchName!''}">
 
+   <button type="submit">Search</button>
+</form>
 
+<form action="/characters" method="get">
+   <label for="movie">Filter by movie</label>
 
+   <input
+      id="movie"
+      type="text"
+      name="movie"
+      placeholder="Frozen, Hercules, etc."
+      value="${selectedMovie!''}">
+
+   <button type="submit">Filter</button>
+</form>
+
+<p>
+   <a href="/characters">Clear Search and Filter</a>
+</p>
 
 <#list characterList as character>
    <div class="character-card">
